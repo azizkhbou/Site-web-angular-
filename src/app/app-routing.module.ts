@@ -5,7 +5,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { FrontComponent } from './components/front/front.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: '', pathMatch: 'full', redirectTo: 'register' },
   { path: 'login', component: LogInComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'front', component: FrontComponent }

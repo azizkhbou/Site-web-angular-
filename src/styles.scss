@@ -61,6 +61,8 @@ body {
   min-width: 100%;
   max-width: 300px;
   width: 100%;
+  margin: auto;
+
 }
 
 .login-wrapper .example-full-width,
@@ -226,7 +228,7 @@ input.mat-input-element {
   .example-full-width{
 width: 300px;
 color: white;
-margin-left: 150px;
+margin-left: 0px;
   }
   .example-card {
     max-width: 1000px;
@@ -248,7 +250,7 @@ margin-left: 150px;
   .example-full-width1{
     width: 1000px;
     color: white;
-    margin-left: 150px;
+    margin-left: 170px;
   }
   .action{
     display: block;
@@ -258,9 +260,8 @@ margin-left: 150px;
   .example-spacer2 {
     flex: 1 0.5 auto;
   }
-  .action1{
-    display: block;
-    margin: auto;
-    margin-left: 500px;
+  .example-full-width2{
+    width: 400px;
+    color: white;
+    margin-left: 150px;
   }
-  
