@@ -1,1 +1,266 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  background: #228B22;
+  background-image: url('assets/back.jpg');
+}
+
+.app-header {
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+.login-wrapper {
+  height: 100%;
+}
+
+.positronx {
+  text-decoration: none;
+  color: green;
+}
+
+.box {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  float: left;
+  padding: 60px 50px 40px 50px;
+  width: 100%;
+  background: rgb(47, 173, 47);
+  border-radius: 10px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  z-index: 5;
+  max-width: 330px;
+}
+
+.box.back {
+  transform: scale(.95);
+  -webkit-transform: scale(.95);
+  -ms-transform: scale(.95);
+  top: -20px;
+  opacity: .8;
+  z-index: -1;
+}
+
+
+
+.login-wrapper .example-form {
+  min-width: 100%;
+  max-width: 300px;
+  width: 100%;
+}
+
+.login-wrapper .example-full-width,
+.login-wrapper .btn-block {
+  width: 100%;
+}
+
+.login-wrapper mat-card-header {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+}
+
+.login-wrapper mat-card-header mat-card-title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.login-wrapper .mat-card {
+  padding: 40px 70px 50px;
+}
+
+.login-wrapper .mat-stroked-button {
+  border: 1px solid currentColor;
+  line-height: 54px;
+  background: #FFF7FA;
+}
+
+.login-wrapper .mat-form-field-appearance-legacy .mat-form-field-infix {
+  padding: 0.8375em 0;
+}
+.example-button-row button
+ {
+    display: block;
+    margin: auto;
+    margin-top: -100px;
+    background-color: rgb(139, 179, 165);
+    color: rgb(250, 244, 244);
+}
+.example-title{
+    color: azure;
+    display: block;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-bottom: -150px;
+    
+}
+
+
+ .logo{
+font-display: 50 ;
+display: inline-block; 
+margin: auto;
+margin-bottom: -100px;
+border-radius: 50%;
+  box-shadow: 0 0 50px rgb(70, 69, 69);
+}
+
+.mat-card-header1{
+  color: azure;
+    display: block;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-bottom: -150px;
+    max-width: 400px;
+
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: white;
+ }
+ /* Font color */
+input.mat-input-element {
+  color: white;
+}
+.example-button-row1 a{
+  display: block;
+    margin: auto;
+    margin-top: -100px;
+    color: rgb(119, 84, 44);
+}
+
+.example-container {
+  height: 1000px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.example-sidenav {
+   user-select: none;
+}
+.full-width {
+  width: 100%;
+}
+.menu-button {
+  transition: 300ms ease-in-out;
+  transform: rotate(0deg);
+}
+.menu-button.rotated {
+  transform: rotate(180deg);
+}
+.submenu {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding-left: 30px;
+}
+.submenu.expanded {
+  transform: scaleY(1);
+}
+.custom-toolbar{
+  background-color: transparent;
+  padding: 0 5px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-icon favorite-icon{
+  color: rgb(250, 244, 244);
+
+}
+
+.example-icon{
+  color: rgb(250, 244, 244);
+
+}
+.active-pink-2 input[type=search]:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  
+  .active-pink input[type=search] {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  
+  .active-purple-2 input[type=search]:focus:not([readonly]) {
+  border-bottom: 1px solid #ce93d8;
+  box-shadow: 0 1px 0 0 #ce93d8;
+  }
+  
+  .active-purple input[type=search] {
+  border-bottom: 1px solid #ce93d8;
+  box-shadow: 0 1px 0 0 #ce93d8;
+  }
+  
+  .active-cyan-2 input[type=search]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  
+  .active-cyan input[type=search] {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  .example-full-width{
+width: 300px;
+color: white;
+margin-left: 150px;
+  }
+  .example-card {
+    max-width: 1000px;
+    max-height: 800px;
+    margin-left: 50px;
+
+  }
+  
+  .example-header-image {
+    background-image: url('assets/face.jpg');
+    background-size: cover;  
+  }
+  .imgc{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+  }
+  .example-full-width1{
+    width: 1000px;
+    color: white;
+    margin-left: 150px;
+  }
+  .action{
+    display: block;
+    margin: auto;
+    margin-left: 500px;
+  }
+  .example-spacer2 {
+    flex: 1 0.5 auto;
+  }
+  .action1{
+    display: block;
+    margin: auto;
+    margin-left: 500px;
+  }
+  

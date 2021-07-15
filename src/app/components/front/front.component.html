@@ -1,0 +1,105 @@
+  <mat-toolbar class="custom-toolbar">
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>tab</mat-icon>
+    </button>    
+    <!-- Search form -->
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <input matInput placeholder="rechercher">
+      </mat-form-field>
+    </form>
+    <span class="example-spacer"></span>
+    <span class="nav-tool-items">
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+       <mat-icon>notifications</mat-icon>
+     </button>
+      </span>
+  </mat-toolbar>
+  <mat-card class="example-card1">
+    
+    <form class="example-form1">
+      <mat-form-field class="example-full-width1" appearance="fill">
+        <textarea matInput placeholder="Que pensez vous?"></textarea>
+        <div mat-card-avatar class="example-header-image"></div>
+      
+      </mat-form-field>
+    </form>
+    <mat-card-actions>
+      <button mat-button class="action">CHARGER</button>
+      <span class="example-spacer2"></span>
+      <button mat-button  class="action1">AJOUTER</button>
+      <span class="example-spacer2"></span>
+      <button mat-button  class="action2">PARTAGER</button>
+    </mat-card-actions>
+  </mat-card>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+		<mat-nav-list>
+			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Menu</span>
+        <mat-icon mat-list-icon>home</mat-icon>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+			<div>
+				<a mat-list-item href="...">Evénement</a>
+				<a mat-list-item href="...">Pages</a>
+        <a mat-list-item href="...">Groupes</a>
+				<mat-list-item >
+					<span class="full-width" *ngIf="isExpanded || isShowing">Contacts</span>
+					<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubSubMenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+				</mat-list-item>
+				<div>
+					<mat-list-item>Facebook</mat-list-item>
+					<mat-list-item>Tel</mat-list-item>
+				</div>
+			</div>
+		</mat-nav-list>
+    <mat-nav-list>
+</mat-nav-list>
+	</mat-sidenav>
+  <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" position="end" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+		<mat-nav-list>
+			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing"> Menu</span>
+        <mat-icon mat-list-icon>home</mat-icon>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+			<div >
+        <a mat-list-item href="...">Evénement</a>
+				<a mat-list-item href="...">Pages</a>
+        <a mat-list-item href="...">Groupes</a>
+				<mat-list-item (click)="showSubSubMenu = !showSubSubMenu" class="parent">
+					<span class="full-width" *ngIf="isExpanded || isShowing">Menu</span>
+					<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubSubMenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+				</mat-list-item>
+				<div>
+					<mat-list-item>autres</mat-list-item>
+				</div>
+        <mat-list-item (click)="showSubSubMenu = !showSubSubMenu" class="parent">
+					<span class="full-width" *ngIf="isExpanded || isShowing">Contact</span>
+					<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubSubMenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+				</mat-list-item>
+				<div>
+					<mat-list-item>Facebook</mat-list-item>
+					<mat-list-item>Tel</mat-list-item>
+				</div>
+			</div>
+		</mat-nav-list>
+    <mat-nav-list>
+</mat-nav-list>
+	</mat-sidenav>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Cristiano Ronaldo</mat-card-title>
+      <mat-card-subtitle>Footballer</mat-card-subtitle>
+    </mat-card-header>
+    <img class="imgc" mat-card-image src="assets/cristiano.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+</mat-sidenav-container>
